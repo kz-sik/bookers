@@ -19,10 +19,10 @@ class BooksController < ApplicationController
 
   def edit
   end
-  
+
   private
-  
+
   def book_params
-    params.require(:list).permit(:title, :body)
+    params.require(:book).permit(:title, :body)
   end
 end
